@@ -1,0 +1,169 @@
+@charset "utf-8";
+html, body,
+ul, ol, li, dl, dt, dd,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+    display:inline-block;
+}
+
+
+
+.inner{
+    max-width:800px;
+    margin:0 auto;
+}
+
+header{
+    margin:80px 0;
+    border-bottom:gray 1px solid;
+}
+
+header h1{
+    margin:0 auto;
+    width:150px;
+}
+
+header ul{
+    display:flex;
+}
+
+header li{
+    padding:40px 5px 40px 5px;
+    font-weight:bold;
+}
+
+.navigation{
+    display:flex;
+    justify-content:space-between;
+}
+
+main{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:120px;
+}
+
+.main-visual{
+    width:50%;
+}
+
+.main-text{
+    width:45%;
+}
+
+.main-text h2{
+    padding:20px 0;
+    border-bottom:1px solid #dcdcdc;
+    border-top:1px solid #dcdcdc;
+    font-weight:bold;
+}
+
+.text{
+   padding:20px 0 30px 0; 
+}
+
+.cost{
+    font-weight:bold;
+}
+
+table{
+    font-weight: bold;
+    width:100%;
+    margin-top:30px;
+}
+
+tr{
+    text-align: center;
+}
+
+td{
+    border-top:solid 1px #dcdcdc;
+}
+
+.color,.order-size{
+    width:20%;
+    padding:10px;
+    border-right:solid #dcdcdc 1px;
+}
+
+.number{
+    width:60%;
+    padding:10px;
+}
+
+.number select{
+    width:90%;
+}
+
+.order-btn{
+    background:black;
+    width:100%;
+    margin:20px 0;
+    padding:20px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.order-btn a{
+    color:white;
+}
+
+.size-table th,.size{
+    background:#cccccc;
+}
+
+.size{
+    width:calc(100%/7);
+    padding:10px;
+}
+
+.chest,.weist,.height{
+    width:calc(200%/7)
+}
+
+footer{
+    text-align:center;
+    font-weight:bold;
+}
+    
+@media(max-width:896px){
+    header{
+        border-bottom:0px;
+    }
+    .navigation{
+        overflow-x:scroll;
+    }
+    main{
+        flex-direction:column;
+    }
+    .main-visual{
+        width:100%;
+    }
+    .main-text{
+        width:100%;
+        padding:0 10px;
+    }
+}
