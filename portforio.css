@@ -95,7 +95,11 @@ h3{
 }
 
 .works-content{
-    width:100px;
+    width:30%;
+}
+
+.works-content img{
+    width:100%;
 }
 
 footer{
